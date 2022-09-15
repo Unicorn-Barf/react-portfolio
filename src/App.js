@@ -4,11 +4,32 @@ import Projects from './components/Projects';
 import './App.css';
 
 function App() {
+
+  // Create state to navigate "Pages"
+  const [currentPage, setCurrentPage] = useState('about');
+
+  // Method that returns the correct component depending on the currentPage state
+  const renderContent = () => {
+    switch (currentPage) {
+      case 'about':
+        return <About />;
+      case 'projects':
+        return <Projects />;
+      case 'contact':
+        return <Contact />;
+      case 'resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  }
+
   return (
     <div className="App">
-      <Header/>
-      <Projects/>
-      <Footer/>
+      <Header />
+      {/* Conditional Rendering of the Main content */}
+      {renderContent()}
+      <Footer />
     </div>
   );
 }
