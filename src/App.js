@@ -1,6 +1,11 @@
+import React, { useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Projects from './components/Projects';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+
 import './App.css';
 
 function App() {
@@ -22,11 +27,14 @@ function App() {
       default:
         return <About />;
     }
-  }
+  };
+
+  // State Change Function to Change Page
+  const pageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="App">
-      <Header />
+      <Header currentPage={currentPage} pageChange={pageChange} />
       {/* Conditional Rendering of the Main content */}
       {renderContent()}
       <Footer />
