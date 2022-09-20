@@ -36,7 +36,9 @@ function App() {
     <div className="App">
       <Header currentPage={currentPage} pageChange={pageChange} />
       {/* Conditional Rendering of the Main content */}
-      {renderContent()}
+      <div className='container'>
+        {renderContent()}
+      </div>
       <Footer />
     </div>
   );

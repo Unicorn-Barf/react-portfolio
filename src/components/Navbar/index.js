@@ -11,7 +11,7 @@ export default function Navbar({ currentPage, pageChange }) {
                     href="#about"
                     onClick={() => pageChange('about')}
                     className={currentPage === 'about'
-                        ? 'nav-link current'
+                        ? 'nav-link current-page'
                         : 'nav-link'
                     }
                 >
@@ -21,7 +21,7 @@ export default function Navbar({ currentPage, pageChange }) {
                     href="#projects"
                     onClick={() => pageChange('projects')}
                     className={currentPage === 'projects'
-                        ? 'nav-link current'
+                        ? 'nav-link current-page'
                         : 'nav-link'
                     }
                 >
@@ -31,7 +31,7 @@ export default function Navbar({ currentPage, pageChange }) {
                     href="#contact"
                     onClick={() => pageChange('contact')}
                     className={currentPage === 'contact'
-                        ? 'nav-link current'
+                        ? 'nav-link current-page'
                         : 'nav-link'
                     }
                 >
@@ -41,7 +41,7 @@ export default function Navbar({ currentPage, pageChange }) {
                     href="#resume"
                     onClick={() => pageChange('resume')}
                     className={currentPage === 'resume'
-                        ? 'nav-link current'
+                        ? 'nav-link current-page'
                         : 'nav-link'
                     }
                 >

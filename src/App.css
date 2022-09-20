@@ -16,3 +16,8 @@ body {
   color: var(--ltfc);
   font-family: 'Trebuchet MS', sans-serif;
 }
+
+.container {
+  width: 95vw;
+  margin: auto;
+}

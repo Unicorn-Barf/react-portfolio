@@ -1,0 +1,35 @@
+footer {
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgb(114, 114, 114);
+    border-top: 2px solid var(--accent);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    height: 80%;
+    margin: 0 1%;
+
+}
+
+a img {
+    height: 100%;
+    padding: 10%;
+    transition: ease-in-out;
+    transition-duration: 500ms;
+}
+
+a img:hover {
+    padding: 0;
+}
+
+
+
+.gmail {
+    filter: invert(1);
+}
