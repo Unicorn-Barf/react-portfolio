@@ -6,15 +6,15 @@ import { projects } from '../../data/projects';
 export default function Header() {
 
   return (
-    <div class="project-section" id="projects">
+    <div className="project-section container" id="projects">
       {/* <!-- Separate box for a Projects header and brief description --> */}
-      <div class="project-dscr">
+      <div className="project-dscr">
         <h2>My Projects</h2>
         <p>These projects are all part of my journey to become the best coder I can be, ENJOY!</p>
       </div>
 
       {/* <!-- Grid display of project tiles with Header and background images --> */}
-      <div class="projects-container">
+      <div className="projects-container">
         {
           projects.map((project, index) => {
             return (

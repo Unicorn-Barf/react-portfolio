@@ -4,3 +4,23 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  /* set with of project description */
+.project-dscr {
+  border-radius: 10px;
+  border: 4px solid var(--lt);
+  margin-top: 5px;
+  padding: 15px;
+  background-color: var(--dk);
+  width: 15%;
+  height: fit-content;
+}
+
+.project-dscr h2 {
+  font-size: 30px;
+}
+
+/* indent paragraph of project description */
+.project-dscr p {
+  margin-top: 15px;
+}
