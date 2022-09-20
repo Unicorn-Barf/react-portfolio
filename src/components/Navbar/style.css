@@ -1,15 +1,8 @@
 nav {
-    position: sticky;
-    top: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 100px;
-    z-index: 1;
-    background-color: var(--dk);
-    border: 4px solid rgb(169, 169, 169);
-    border-radius: 10px;
   }
 
   /* Format Nav Button Text */
@@ -31,3 +24,9 @@ nav a {
     border: 5px dotted var(--accent);
     cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    nav {
+        justify-content: center;
+    }
+}
