@@ -1,0 +1,48 @@
+.project-card {
+    border-radius: 10px;
+    margin: 5px;
+    width: 47%;
+    height: 100%;
+    background-color: var(--ltfc);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--dk);
+    backdrop-filter: none;
+    transition: all .85s ease-in-out;
+    text-decoration: none;
+  }
+
+  .project-card:hover {
+    opacity: .85;
+    transform: scale(1.03);
+  }
+  a>h3 {
+    font-size: 30px;
+    padding: 5px;
+    background-color: var(--dk);
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: var(--ltfc);
+  }
+  
+  /* Formats skills used list */
+  a>ul {
+    color: black;
+    text-align: center;
+    align-self: center;
+    justify-self: flex-end;
+    width: fit-content;
+    bottom: -50px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    list-style: none;
+    backdrop-filter: blur(10px);
+    bottom: 5px;
+  }

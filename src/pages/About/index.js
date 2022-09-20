@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 export default function Header() {
     return (
@@ -6,7 +7,7 @@ export default function Header() {
             <section class="about" id="about">
 
                 {/* <!-- This is my profile picture --> */}
-                <img class="profile-pic" src="./assets/images/profile.jpg" alt="A beautiful placeholder image"/>
+                <img class="profile-pic" src="/assets/images/profile.jpg" alt="A beautiful placeholder image"/>
 
                     {/* <!-- This is my about article --> */}
                     <article>
