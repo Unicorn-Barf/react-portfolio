@@ -1,4 +1,7 @@
 import React from 'react';
+import emailImg from '../../assets/images/gmail.png';
+import githubImg from '../../assets/images/github.png';
+import linkedInImg from '../../assets/images/linkedIn.png';
 import './style.css';
 
 export default function Footer() {
@@ -11,19 +14,19 @@ export default function Footer() {
         <a href="mailto:nolan.spence7@gmail.com">
         <img
             className='gmail'
-            src='/assets/images/gmail.png'
+            src={emailImg}
             alt='Gmail logo'
           />
         </a>
         <a href="https://github.com/Unicorn-Barf" target="_blank">
         <img
-            src='/assets/images/github.png'
+            src={githubImg}
             alt='Github logo'
           />
         </a>
         <a href="https://www.linkedin.com/in/aerospence/" target="_blank">
           <img
-            src='/assets/images/linkedIn.png'
+            src={linkedInImg}
             alt='linkedIn logo'
           />
         </a>
