@@ -6,9 +6,9 @@ export default function Header({ githubUrl, name, imageUrl }) {
   return (
     <div
       className='project-card'
-      style={{backgroundImage: `url(${imageUrl})`}}
+      style={{backgroundImage: `url(${require(`../..` + imageUrl).default})`}}
     >
-      <a class={`${name}`} href={githubUrl} target="_blank">
+      <a class={`${name}`} href={githubUrl} rel="noreferrer" target="_blank">
         <h3>{name}</h3>
       </a>
     </div>
