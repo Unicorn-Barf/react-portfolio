@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -13,6 +14,8 @@ const SubmitButton = styled(Button)({
 
 
 export default function EmailForm() {
+
+    const form = useRef();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -35,6 +38,16 @@ export default function EmailForm() {
         }
     };
 
+    const sendEmail = () => {
+    
+        emailjs.sendForm('service_ay9fbqg', 'template_cdufmi2', form.current, 'gbS5-pnTumcNs9T_6')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
     const handleFormSubmit = (event) => {
         event.preventDefault();
 
@@ -44,6 +57,7 @@ export default function EmailForm() {
         if (message.trim().length < 10) return;
 
         // Send email
+        sendEmail();
     }
 
     return (
