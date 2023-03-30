@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import DrawerAppBar from './components/Navbar/reactNavbar';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      <DrawerAppBar/>
       <Header currentPage={currentPage} pageChange={pageChange} />
       {/* Conditional Rendering of the Main content */}
       <div className='container'>

@@ -53,7 +53,7 @@ export default function EmailForm() {
 
         // Basic Validation for form
         if (name.trim().length < 1) return;
-        if (!(/^([a-z\d_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email))) return;
+        if (!(/^([a-z\d_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(email))) return;
         if (message.trim().length < 10) return;
 
         // Send email
@@ -64,6 +64,7 @@ export default function EmailForm() {
         <div>
             <Box
                 component="form"
+                ref={form}
                 sx={{
                     '& .MuiTextField-root': { width: '100%', my: 2 },
                     backgroundColor: 'white',
@@ -79,6 +80,8 @@ export default function EmailForm() {
                 <TextField
                     required
                     id="name-input"
+                    name="user_name"
+                    type="text"
                     label="Name"
                     value={name}
                     variant="outlined"
@@ -87,6 +90,8 @@ export default function EmailForm() {
                 <TextField
                     required
                     id="email-input"
+                    name="user_email"
+                    type="email"
                     label="Email"
                     value={email}
                     variant="outlined"
@@ -98,6 +103,7 @@ export default function EmailForm() {
                     fullWidth
                     rows={8}
                     id="message-input"
+                    name="message"
                     label="Message"
                     value={message}
                     variant="outlined"

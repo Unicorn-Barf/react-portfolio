@@ -6,7 +6,7 @@
   --accent: chartreuse;
 }
 
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -21,3 +21,7 @@ body {
   width: 95vw;
   margin: auto;
 }
+
+.app {
+  padding-bottom: 1000px;
+} */
