@@ -16,10 +16,10 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
 
-function DrawerAppBar(props) {
-  const { window } = props;
+ export default function DrawerAppBar({window, currentPage, pageChange }) {
+  // const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -35,7 +35,7 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton onClick={() => pageChange(item)} sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -69,7 +69,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button onClick={() => pageChange(item)} key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
@@ -102,5 +102,3 @@ function DrawerAppBar(props) {
     </Box>
   );
 }
-
-export default DrawerAppBar;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import DrawerAppBar from './components/Navbar/reactNavbar';
+import DrawerAppBar from './components/Navbar/muiNavbar';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
@@ -17,13 +17,13 @@ function App() {
   // Method that returns the correct component depending on the currentPage state
   const renderContent = () => {
     switch (currentPage) {
-      case 'about':
+      case 'About':
         return <About />;
-      case 'projects':
+      case 'Projects':
         return <Projects />;
-      case 'contact':
+      case 'Contact':
         return <Contact />;
-      case 'resume':
+      case 'Resume':
         return <Resume />;
       default:
         return <About />;
@@ -35,8 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <DrawerAppBar/>
-      <Header currentPage={currentPage} pageChange={pageChange} />
+      <DrawerAppBar currentPage={currentPage} pageChange={pageChange}/>
       {/* Conditional Rendering of the Main content */}
       <div className='container'>
         {renderContent()}
