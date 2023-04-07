@@ -18,7 +18,7 @@ import Button from '@mui/material/Button';
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
 
- export default function DrawerAppBar({window, currentPage, pageChange }) {
+export default function DrawerAppBar({ window, currentPage, pageChange }) {
   // const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -49,7 +49,7 @@ const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar position='static' style={{ backgroundColor: '#D584D5' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -93,12 +93,12 @@ const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
+      {/* <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
         <Typography>
           Say something here!!
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }

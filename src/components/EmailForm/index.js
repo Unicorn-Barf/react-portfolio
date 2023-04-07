@@ -69,7 +69,7 @@ export default function EmailForm() {
                     '& .MuiTextField-root': { width: '100%', my: 2 },
                     backgroundColor: 'white',
                     borderRadius: '10px',
-                    padding: '15px',
+                    padding: '100px',
                     width: '50%'
 
                 }}

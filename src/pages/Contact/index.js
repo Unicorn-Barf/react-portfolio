@@ -5,7 +5,9 @@ export default function Contact() {
     return (
         <>
             <h1>Contact Page</h1>
-            <EmailForm/>
+            <EmailForm
+            style={{marginBottom: '3000px'}}
+            />
         </>
     )
 };
