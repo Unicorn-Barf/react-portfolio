@@ -1,12 +1,24 @@
+import boneBuddies from '../assets/images/projects/boneBuddies.png';
+import freakimono from '../assets/images/projects/freakimono.png';
+import NaNarWord from '../assets/images/projects/NaNarWord.png';
+
 export const projects = [
+    {
+        name: "Bone Buddies",
+        githubUrl: "https://github.com/Unicorn-Barf/Doggy_Dating",
+        imageUrl: boneBuddies,
+        deployedSite: "https://bonebuddies.onrender.com"
+    },
     {
         name: "Freakimono",
         githubUrl: "https://github.com/Team-Narwhal/My_Pet",
-        imageUrl: "https://drive.google.com/uc?id=1WJ8C6d5S1N8MhmP-4JxnsqDbUKPUWIUi",
+        imageUrl: freakimono,
+        deployedSite: "https://freakimono.herokuapp.com/"
     },
     {
         name: "NaNarWord",
         githubUrl: "https://nanifer.github.io/NaNarWord-word-game",
-        imageUrl: "https://drive.google.com/uc?id=1iVmRmtnoTMB2gqBYXoUh1CTONrg0PXQf",
+        imageUrl: NaNarWord,
+        deployedSite: "https://nanifer.github.io/NaNarWord-word-game/"
     },
 ]

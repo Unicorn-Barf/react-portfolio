@@ -1,6 +1,6 @@
 import React from 'react';
-import './style.css';
-import ProjectCard from '../../components/ProjectCard';
+// import './style.css';
+import NewProjectCard from './ProjectCardInteractive';
 import { projects } from '../../data/projects';
 
 export default function Header() {
@@ -18,11 +18,12 @@ export default function Header() {
         {
           projects.map((project, index) => {
             return (
-              <ProjectCard
+              <NewProjectCard
                 key={index}
-                githubUrl={project.githubUrl}
-                name={project.name}
                 imageUrl={project.imageUrl}
+                projectName={project.name}
+                deployedSite={project.deployedSite}
+                githubUrl={project.githubUrl}
               />
             )
           })

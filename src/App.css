@@ -10,9 +10,7 @@ html {
   scroll-padding-top: 200px;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   display: block;
