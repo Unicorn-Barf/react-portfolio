@@ -6,7 +6,11 @@
   --accent: chartreuse;
 }
 
-/* * {
+html {
+  scroll-padding-top: 200px;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -24,4 +28,4 @@ body {
 
 .app {
   padding-bottom: 1000px;
-} */
+}

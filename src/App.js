@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import DrawerAppBar from './components/Navbar/muiNavbar';
+import Navbar from './components/Navbar';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
@@ -34,8 +34,8 @@ function App() {
   const pageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="App">
-      <DrawerAppBar currentPage={currentPage} pageChange={pageChange}/>
+    <div className="App" style={{ marginBottom: '50000px' }}>
+      <Navbar className="navbar" currentPage={currentPage} pageChange={pageChange} style={{ marginBottom: 'offsetHeight' }}/>
       {/* Conditional Rendering of the Main content */}
       <div className='container'>
         {renderContent()}
