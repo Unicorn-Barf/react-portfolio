@@ -7,8 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
+
 export default function ProjectCardInteractive(props) {
   const { imageUrl, projectName, about, deployedSite, githubUrl } = props;
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -26,10 +28,10 @@ export default function ProjectCardInteractive(props) {
       </CardContent>
       <CardActions>
         <Link href={deployedSite} underline="none" target='_blank' rel='noopener'>
-          <Button size="small">Check it out</Button>
+          <Button color={"dk"} size="small">Check it out</Button>
         </Link>
 
-        <Button size="small">Learn More</Button>
+        <Button color={"dk"} size="small">Learn More</Button>
       </CardActions>
     </Card>
   );

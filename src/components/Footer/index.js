@@ -1,7 +1,7 @@
 import React from 'react';
-import emailImg from '../../assets/images/gmail.png';
-import githubImg from '../../assets/images/github.png';
-import linkedInImg from '../../assets/images/linkedIn.png';
+import emailImg from '../../assets/images/icons/gmail.png';
+import githubImg from '../../assets/images/icons/github.png';
+import linkedInImg from '../../assets/images/icons/linkedIn.png';
 import './style.css';
 
 export default function Footer() {

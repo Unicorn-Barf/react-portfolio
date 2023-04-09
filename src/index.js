@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './assets/style/index.css';
 import App from './App';
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from './assets/style/Palette';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <ThemeProvider theme={theme}>
+        <App />
+    </ThemeProvider>
 );
 

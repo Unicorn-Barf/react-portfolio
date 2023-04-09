@@ -6,7 +6,7 @@ import { projects } from '../../data/projects';
 export default function Header() {
 
   return (
-    <div className="project-section container" id="projects">
+    <div className="project-section container" id="projects"  style={{ zIndex: 3, backgroundColor: 'dk' }}>
       {/* <!-- Separate box for a Projects header and brief description --> */}
       <div className="project-dscr">
         <h2>My Projects</h2>

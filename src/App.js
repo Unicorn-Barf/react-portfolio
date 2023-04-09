@@ -7,7 +7,7 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
-import './App.css';
+import './assets/style/App.css';
 
 function App() {
 
